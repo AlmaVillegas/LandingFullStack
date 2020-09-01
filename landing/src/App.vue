@@ -2,21 +2,20 @@
   <v-app>
     <Navbar/>
     <v-main>
-      <!--<HelloWorld/>-->
+      <Inicio/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld'
 import Navbar from './components/Navbar'
+import Inicio from './components/Inicio'
 
 export default {
   name: 'App',
-
   components: {
-  //  HelloWorld,
-    Navbar
+    Navbar,
+    Inicio
   },
 
   data: () => ({

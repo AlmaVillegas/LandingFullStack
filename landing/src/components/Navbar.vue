@@ -5,16 +5,16 @@
       color="#F2F9F5"
       dark
     >
-      <div class="d-flex align-center v-responsive__content">
+      <div class="d-flex align-center v-responsive">
         <v-img
-          class="shrink mr-2"
+          class="shrink mr-2 v-responsive__content"
           contain
           transition="scale-transition"
           width="40"
         />
         <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
+
+          class="shrink mt-1 hidden-sm-and-down v-responsive__content"
           contain
           min-width="100"
           src="../assets/LOGO-RAMPA.svg"
@@ -67,7 +67,6 @@
            src="../assets/TIKTOK.svg"/>
       </div>
     </v-app-bar>
-      <v-img src="../assets/banner.png"/>
   </div>
 </template>
 
