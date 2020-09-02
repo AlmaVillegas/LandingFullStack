@@ -1,6 +1,6 @@
 <template>
 <div>
-   <v-card>
+   <v-card color="#F2F9F5">
     <v-card-text class="text--primary">
      <v-row>
      <v-col justify="center">
@@ -17,7 +17,7 @@
         </v-carousel>
       </div>
       </v-col>
-      <v-col>
+      <v-col cols="12" sm="4">
       <v-card>
       <div class="city">
         Experiencias
@@ -47,13 +47,13 @@ export default {
     return {
       items: [
         {
-          src: '../assets/images/imagen1.png'
+          src: require('../assets/images/imagen1.png')
         },
         {
-          src: '../assets/images/imagen2.png'
+          src: require('../assets/images/imagen2.png')
         },
         {
-          src: '../assets/images/imagen3.png'
+          src: require('../assets/images/imagen3.png')
         }
       ]
     }

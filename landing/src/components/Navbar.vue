@@ -24,28 +24,28 @@
         <v-btn
             target="_blank"
             color="black"
-            @click="$router.push('/about')"
+            @click="$router.replace('/inicio')"
             text>
            <span class="mr-2">Inicio</span>
         </v-btn>
         <v-btn
             target="_blank"
             color="black"
-            @click="$router.push('/')"
+            @click="$router.replace('/nuestro')"
             text>
            <span class="mr-2">Nosotros</span>
         </v-btn>
         <v-btn
             target="_blank"
             color="black"
-            @click="$router.push('/about')"
+            @click="$router.push('/banquete')"
             text>
            <span class="mr-2">Galeria</span>
         </v-btn>
         <v-btn
             target="_blank"
             color="black"
-            @click="$router.push('/')"
+            @click="$router.push('/contacto')"
             text>
            <span class="mr-2">Contacto</span>
         </v-btn>

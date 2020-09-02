@@ -1,25 +1,27 @@
 <template>
   <div>
-   <v-card>
+   <v-card color="#F2F9F5">
     <v-card-text class="text--primary">
      <v-row>
      <v-col justify="center">
       <div class="information">Solicitar Información</div>
       <div class="date">Miercoles 2 DE Septiembre <span class="year">2020</span></div>
        <v-row class="margen">
-         <v-col cols="12" sm="6">
+         <v-col cols="12" sm="6" md="4">
           <v-text-field
             v-model="nombre"
             label="Nombre Completo"
             single-line
+            color="teal"
             required
           ></v-text-field>
         </v-col>
        </v-row>
        <v-row class="margen">
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="6" md="4">
           <v-text-field
             v-model="correo"
+            color="teal"
             label="Correo electronico"
             single-line
             required
@@ -27,16 +29,17 @@
         </v-col>
        </v-row>
        <v-row class="margen">
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="6" md="4">
           <v-select
             :items="items"
+            color="teal"
             v-model="TipoEvento"
             label="Tipo de evento"
           ></v-select>
         </v-col>
        </v-row>
        <v-row class="margen">
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="6" md="4">
           <v-menu
             ref="menu1"
             v-model="menu1"
@@ -49,8 +52,8 @@
           <template v-slot:activator="{ on, attrs }">
            <v-text-field
               v-model="dateFormatted"
+              color="teal"
               label="Fecha de evento estimada"
-              hint="MM/DD/YYYY format"
               persistent-hint
               v-bind="attrs"
               @blur="date = parseDate(dateFormatted)"
@@ -60,19 +63,19 @@
           <v-date-picker v-model="date" no-title @input="menu1 = false"></v-date-picker>
         </v-menu>
         </v-col>
+        <v-col cols="12" sm="6" md="4">
+          <v-textarea
+            class="margen1"
+            color="teal"
+            v-model="mensaje"
+            label="Mensaje">
+          </v-textarea>
+        </v-col>
        </v-row>
-     </v-col>
-     <v-col cols="6" sm="4">
-       <v-textarea
-          class="margen1"
-          color="teal"
-          v-model="mensaje"
-          label="Mensaje">
-       </v-textarea>
      </v-col>
      </v-row>
       <div class="text-center">
-          <v-btn class="btn-send" @click="Insert">Enviar</v-btn>
+          <v-btn class="btn-send" @click="Insert" color="#A5D5BB">Enviar</v-btn>
       </div>
     </v-card-text>
    </v-card>
@@ -166,14 +169,14 @@ export default {
 }
 .year{
     text-align: left;
-    font: italic normal medium 86px/96px DIN Next LT Pro;
+    font: italic normal medium 106px/96px DIN Next LT Pro;
     letter-spacing: 0px;
     color: #A5D5BB;
     opacity: 1;
 }
 .btn-send{
-    width: 536px;
-    height: 109px;
+    width: 336px;
+    height: 309px;
     background: #A5D5BB 0% 0% no-repeat padding-box;
     border-radius: 55px;
     opacity: 1;
