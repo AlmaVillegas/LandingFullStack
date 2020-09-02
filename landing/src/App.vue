@@ -3,6 +3,7 @@
     <Navbar/>
     <v-main>
       <Inicio/>
+      <Nuestro/>
       <Contacto/>
     </v-main>
   </v-app>
@@ -11,6 +12,7 @@
 <script>
 import Navbar from './components/Navbar'
 import Inicio from './components/Inicio'
+import Nuestro from './components/Nuestro'
 import Contacto from './components/Contacto'
 
 export default {
@@ -18,6 +20,7 @@ export default {
   components: {
     Navbar,
     Inicio,
+    Nuestro,
     Contacto
   },
 
